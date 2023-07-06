@@ -1,0 +1,137 @@
+form{
+    transition: box-shadow 0.3s ease;
+    width: 450px;
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    /*box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);*/
+    background-color: white;
+    border-radius: 10px;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 17px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+form:hover{
+    box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.3);
+}
+
+h2{
+    font-size: 40px;
+    -webkit-text-stroke: 0.2px black;
+    font-family: 'Poppins', sans-serif;
+    color: #6B33FF;
+    padding-top: 10px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+label{
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+input,textarea{
+    margin-bottom: 10px;
+    border-radius: 5px;
+    outline: none;
+    background: color #000000;
+    font-size: 15px;
+    font-family: 'Libre Franklin', sans-serif;
+    display: flex;
+    flex-direction: column;
+    width: 330px;
+}
+
+select,option{
+    padding: 6px 30px;
+    margin-bottom: 15px;
+    outline: none;
+    font-size: 15px;
+    font-family: 'Libre Franklin', sans-serif;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.btn{
+    font-size: 18px;
+    font-family: 'Bebas Neue', sans-serif;
+    background-color: white;
+    border: solid 0.2px;
+    border-color: rgb(0, 0, 0);
+    border-radius: 32px;
+    cursor: pointer;
+    margin: auto;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+}
+
+.btn:hover{
+    background-color: var(--color-rosa);
+}
+
+.form-control.valida input{
+    border: 0.1px solid;
+    border-color: green;
+}
+
+.form-control-consulta.valida textarea{
+    border: 0.1px solid;
+    border-color: green;
+}
+
+.form-control.error input{
+    border: 0.1px solid;
+    border-color: red;
+}
+
+.form-control-consulta.error textarea{
+    border: 0.1px solid;
+    border-color: red;
+}
+
+.form-control p{
+    visibility: hidden;
+}
+
+.form-control.error p{
+    visibility: visible;
+    color: red;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.form-control-consulta.error p{
+    visibility: visible;
+    color: red;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+input{
+    height:30px
+}
+
+#c{
+    height:90px
+}
+
+.boton{
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 600px){
+    input, textarea{
+        width: 200px;
+    }
+
+}

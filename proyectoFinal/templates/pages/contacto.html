@@ -1,0 +1,49 @@
+{% extends 'landing.html' %}
+{% load static %}
+{% block content %}
+    <form action="https://formspree.io/f/xqkoogrj" method="POST" id="formulario">
+        <div class="input-group">
+            <h2>Contacto</h2>
+
+            <div class="form-control">
+                <label for="n">Nombre:</label>
+                <input type="text" name="nombre" id="n" placeholder="Nombre" required> 
+                <p></p>
+            </div>
+
+            <div class="form-control">
+                <label for="a">Apellido:</label>
+                <input type="text" name="apellido" id="a" placeholder="Apellido" required> 
+                <p></p>
+            </div>
+
+            <div class="form-control">
+                <label for="t">Teléfono:</label>
+                <input type="tel" name="telefono" id="t" placeholder="Teléfono"> 
+                <p></p>
+            </div>
+
+            <div class="form-control">
+                <label for="m">E-Mail:</label>
+                <input type="email" name="mail" id="m" placeholder="E-Mail" required> 
+                <p></p>
+            </div>
+
+            <div class="form-control">
+                <label for="c">Consulta:</label>
+                <textarea name="comentario" id="c" placeholder="Escriba su consulta" required></textarea> 
+                <p></p>
+            </div>
+            <div class="boton">
+                <button type="submit" class="btn" value="Enviar"> Enviar </button>
+                <button type="reset" class="btn" value="Restablecer"> Restablecer </button>
+            </div>
+
+        </div>
+    </form>
+    <br>
+    <br>
+
+    <link rel="stylesheet" href="{% static './css/contacto.css' %}">
+    <script src="{% static './js/formulario.js' %}"></script>
+    {% endblock %} 

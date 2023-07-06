@@ -1,0 +1,121 @@
+{% extends 'landing.html' %}
+{% load static %}
+{% block content %}
+    <main>
+        <section class="container services" id="verMas">
+            <h2 class="subtitle">Servicios</h2>
+            <p class="services__paragraph">Nos especializamos en E-commerce, Marketing Dígital y Branding.</p>
+
+            <div class="services__main">
+                <article class="services__icons">
+                    <img src="{% static './imgs/store.svg' %}" class="services__icon" alt="E-commerce">
+                    <h3 class="services__title">E-commerce</h3>
+                    <p class="services__paragraph">Desarrollo y Optimización de webs para venta online. Vende por internet en tu propia tienda nube.</p>
+                </article>
+
+                <article class="services__icons">
+                    <img src="{% static './imgs/branding.svg' %}" class="services__icon" alt="MarketingDigital">
+                    <h3 class="services__title">Marketing Digital</h3>
+                    <p class="services__paragraph">Apuntamos a optimizar tu inversión publicitaria y a maximizar las ventas de tu tienda online</p>
+                </article>
+                
+                <article class="services__icons">
+                    <img src="{% static './imgs/brand.svg' %}" class="services__icon" alt="Branding">
+                    <h3 class="services__title">Branding</h3>
+                    <p class="services__paragraph">Identidad de marca y desarrollo de imagen institucional. Adapatamos tus necesidades técnologicas en experiencias valiosas.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="testimony">
+            <div class="testimony__container container">
+                <img src="{% static './imgs/leftarrow.svg' %}" class="testimony__arrow" id="before" alt="flecha">
+                <section class="testimony__body testimony__body--show" data-id="1">
+                    <div class="testimony__text">
+                        <h2 class="subtitle">Agustin Fernandez, <span class="testimony__course">CEO CRZ CONSTRUCCIONES.</span></h2>
+                        <p class="testimony__review">Entendieron bien nuestras metas en cuanto a la nueva imagen y gracias a ello las llevamos a cabo de una manera agil y concreta. Sin dudas son el socio ideal para compañias que buscan expertos en diseño y desarrollo web</p>
+                    </div>
+
+                    <figure class="testimony__picture">
+                        <img src="{% static './imgs/foto.jpg' %}" class="testimony__img" alt="FotoJordan">
+                    </figure>
+                </section>
+
+                <section class="testimony__body" data-id="2">
+                    <div class="testimony__text">
+                        <h2 class="subtitle">Martina Varela, <span class="testimony__course">HOME DECORACIONES.</span></h2>
+                        <p class="testimony__review">No tenemos más que palabras de agradecimiento para todo el equipo. En un periodo muy corto de tiempo aumentaron nuestras ventas de manera sustancial. Nuestra nueva tienda online es lo más.</p>
+                    </div>
+
+                    <figure class="testimony__picture">
+                        <img src="{% static './imgs/foto1.jpg' %}" class="testimony__img" alt="FotoAle">
+                    </figure>
+                </section>
+
+                <section class="testimony__body" data-id="3">
+                    <div class="testimony__text">
+                        <h2 class="subtitle">Paula Sophia Abella, <span class="testimony__course">MAGNOLIA MODA.</span></h2>
+                        <p class="testimony__review">Se adaptaron a la realidad de mi marca y armaron un plan integral de trabajo. Durante el proceso me enseñaron, me ayudaron, se brindarón al 100%. ¡Muchas gracias por todo! </p>
+                    </div>
+
+                    <figure class="testimony__picture">
+                        <img src="{% static './imgs/foto2.jpg' %}" class="testimony__img" alt="FotoKaren">
+                    </figure>
+                </section>
+
+                <img src="{% static './imgs/rightarrow.svg' %}" class="testimony__arrow" id="next" alt="flecha">
+            </div>
+
+        </section>
+
+        <section class="questions container">
+            <h2 class="subtitle">Preguntas Frecuentes</h2>
+            <p class="questions__paragraph">Respondemos todas las dudas y/o consultas</p>
+
+            <section class="questions__container">
+                <article class="questions__padding">
+                    <div class="questions__answer">
+                        <h3 class="questions__title">¿Como puedo contratar sus servicios?
+                            <span class="questions__arrow">
+                                <img src="{% static './imgs/arrow.svg' %}" class="questions_img" alt="arrow">
+                            </span>
+                        </h3>
+
+                        <p class="questions__show">En nuestra sección de Contacto que encuentras en el Menu Principal, o por cualquiera de nuestras Redes Sociales</p>
+                    </div>
+                </article>
+
+                <article class="questions__padding">
+                    <div class="questions__answer">
+                        <h3 class="questions__title">¿Pregunta 2?
+                            <span class="questions__arrow">
+                                <img src="{% static './imgs/arrow.svg' %}" class="questions_img" alt="arrow">
+                            </span>
+                        </h3>
+
+                        <p class="questions__show"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse error voluptate sed, dolore reiciendis dicta aliquid repudiandae quas iusto corrupti quae sequi natus nisi ratione non facere ipsam voluptatibus optio? Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse error voluptate sed, dolore reiciendis dicta aliquid repudiandae quas iusto corrupti quae sequi natus nisi ratione non facere ipsam voluptatibus</p>
+                    </div>
+                </article>
+
+                <article class="questions__padding">
+                    <div class="questions__answer">
+                        <h3 class="questions__title">¿Pregunta 3?
+                            <span class="questions__arrow">
+                                <img src="{% static './imgs/arrow.svg' %}" class="questions_img" alt="arrow">
+                            </span>
+                        </h3>
+
+                        <p class="questions__show"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse error voluptate sed, dolore reiciendis dicta aliquid repudiandae quas iusto corrupti quae sequi natus nisi ratione non facere ipsam voluptatibus optio? Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse error voluptate sed, dolore reiciendis dicta aliquid repudiandae quas iusto corrupti quae sequi natus nisi ratione non facere ipsa</p>
+                    </div>
+                </article>
+            </section>
+
+            <section class="questions__offer">
+                <h2 class="subtitle">Estamos a la vanguardia de la tecnologia</h2>
+                <p class="questions__copy">En Núcleo Digital nos comprometemos con cada uno de nuestros clientes y cumplimos con entregas en tiempo y forma.</p>
+            </section>
+        </section>
+    </main>
+    <script src="{% static './js/slider.js' %}"></script>
+    <script src="{% static '/js/questions.js' %}"></script>
+{% endblock %} 

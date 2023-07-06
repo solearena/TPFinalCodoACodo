@@ -1,0 +1,70 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#2091F9">
+    <!-- CSS -->
+    <link rel="stylesheet" href="{% static './css/estilos.css' %}">
+    <link rel="stylesheet" href="{% static './css/normalize.css' %}">
+    <link rel="stylesheet" href="{% static './css/styleIndex.css' %}">
+    <link rel="shortcut icon" href= "{% static './imgs/flor.png' %}">
+    <title>NÚCLEO DÍGITAL</title>
+</head>
+<body>
+    <header class="hero">
+        <nav class="nav">
+            <div class="nav__logo">
+                <img src="{% static './imgs/florLogo.png' %}" class="nav__logo-img" alt="Logo-ND">
+            </div>
+
+            <ul class="nav__link nav__link--menu">
+                <li class="nav__items">
+                    <a href="{% url 'index_page' %}" class="nav__links">HOME</a>
+                </li>
+                <li class="nav__items">
+                    <a href="{% url 'empresa_page' %}" class="nav__links">LA EMPRESA</a>
+                </li><li class="nav__items">
+                    <a href="{% url 'portfolio_page' %}" class="nav__links">PORTFOLIO</a>
+                </li><li class="nav__items">
+                    <a href="{% url 'contacto_page' %}" class="nav__links">CONTACTO</a>
+                </li>
+                
+                <img src="{% static './imgs/close.svg' %}" class="nav__close" alt="salir">
+            </ul>
+            
+            <div class="nav__menu">
+                <img src="{% static './imgs/menu.svg' %}" class="nav__img" alt="menu">
+            </div>
+        </nav>
+        <section class="hero__container container">
+            <h1 class="hero__title">NÚCLEO DIGITAL</h1>
+            <p class="hero__paragraph">Acompañamos en la evolución dígital de las empresas y organizaciones.</p>       
+            {% block head %} {% endblock %} 
+        </section>
+    </header>
+    
+    <main>
+        {% block content %} {% endblock %} 
+    </main>
+
+    <footer class="footer">
+        <section class="footer__copy container">
+            <div class="footer__social">
+                <a href="#" class="footer__icons"><img src="{% static './imgs/facebook.svg' %}" alt="logoFacebook" class="footer__img"></a>
+                <a href="#" class="footer__icons"><img src="{% static './imgs/twitter.svg' %}" alt="logoTwitter" class="footer__img"></a>
+                <a href="#" class="footer__icons"><img src="{% static './imgs/youtube.svg' %}" alt="logoYoutube" class="footer__img"></a>
+                <a href="#" class="footer__icons"><img src="{% static './imgs/instagram.svg' %}" alt="logoInstagram" class="footer__img"></a>
+            </div>
+
+            <h3 class="footer__copyright">Derechos reservados &copy; NÚCLEO DIGITAL</h3>
+        </section>
+    </footer>
+    <script src="{% static './js/menu.js' %}"></script>
+    <script src="{% static './js/bienvenida.js' %}"></script>
+    <script src="{% static './js/lightbox.js' %}"></script>
+</body>
+</html>
