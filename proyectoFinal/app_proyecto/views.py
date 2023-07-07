@@ -29,13 +29,13 @@ class ConsultasCreateView(ConsultasBaseView, CreateView):
         'tipo': 'Crear Consulta'
     }
 
-class ConsultasUpdateView(ConsultasBaseView, View):
+class ConsultasUpdateView(ConsultasBaseView, UpdateView):
     template_name = 'consulta_create.html'
     extra_context = {
         'tipo': 'Update Consulta'
     }
 
-class ConsultasDeleteView(ConsultasBaseView, View):
+class ConsultasDeleteView(ConsultasBaseView, DeleteView):
     template_name = 'consulta_delete.html'
     extra_context = {
         'tipo': 'Eliminar Consulta'
