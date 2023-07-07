@@ -6,7 +6,7 @@ class Consulta(models.Model):
     #class Meta:
      #   db_table: "lista_consultas"
 
-    codigo=models.PositiveSmallIntegerField(primary_key=True)
+    codigo=models.AutoField(primary_key=True)
     nombre=models.CharField(max_length=50)
     email=models.CharField(max_length=50)
     descripcion=models.CharField(max_length=250)

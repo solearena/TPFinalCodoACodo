@@ -1,6 +1,6 @@
 from django.urls import path
 from .views import ConsultasListView, ConsultasDetailView, ConsultasCreateView, ConsultasDeleteView, ConsultasUpdateView
-# from .router import router
+from .router import router
 
 app_name = "consultas"
 
@@ -12,4 +12,4 @@ urlpatterns = [
     path('<int:pk>/delete/', ConsultasDeleteView.as_view(), name = 'delete')
 ]
 
-# urlpatterns += router.urls
+urlpatterns += router.urls
