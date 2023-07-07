@@ -1,0 +1,37 @@
+{% extends 'landing.html' %}
+{% load static %}
+
+{% block header %} 
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+{% endblock %}
+
+{% block content %}
+
+<main>
+    <div class="container py-4">
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col-6">
+                <h3 style="color: #6B33FF">¿Esta seguro de eliminar esta consulta?</h3>
+                <h3>{{consulta.nombre}}</h3>
+                <div class="card-body">
+                    <form method="POST"> 
+                        {% csrf_token %}
+                        <div>{{form.as_p}}</div>
+                        <div class="form-group">
+                            <input type="submit" value="{{ tipo }}" />
+                            <a href="{% url 'consultas:all' %}" style="text-decoration: none; color: #6B33FF;">Volver atras</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-3"></div>
+        </div>
+
+    </div>
+
+</main>
+
+{% endblock %} 

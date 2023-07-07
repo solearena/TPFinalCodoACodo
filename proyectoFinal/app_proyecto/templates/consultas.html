@@ -31,7 +31,7 @@
                                 <td>{{c.nombre}}</td>
                                 <td>{{c.email}}</td>
                                 <td>{{c.descripcion}}</td>
-                                <td> Modificar | Eliminar</td>
+                                <td> <a href="{% url 'consultas:update' c.codigo %}">Modificar</a> | <a href="{% url 'consultas:delete' c.codigo %}">Eliminar</a></td>
                             </tr>
                             {% endfor %}
                         </tbody>

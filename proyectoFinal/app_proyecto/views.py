@@ -32,7 +32,7 @@ class ConsultasCreateView(ConsultasBaseView, CreateView):
 class ConsultasUpdateView(ConsultasBaseView, UpdateView):
     template_name = 'consulta_create.html'
     extra_context = {
-        'tipo': 'Update Consulta'
+        'tipo': 'Modificar Consulta'
     }
 
 class ConsultasDeleteView(ConsultasBaseView, DeleteView):
