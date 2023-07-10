@@ -3,8 +3,9 @@ from django.db import models
 # Create your models here.
 
 class Consulta(models.Model):
-    #class Meta:
-     #   db_table: "lista_consultas"
+
+    class Meta:
+        db_table = "consultas_table" 
 
     codigo=models.AutoField(primary_key=True)
     nombre=models.CharField(max_length=50)
